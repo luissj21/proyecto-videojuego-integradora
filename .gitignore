@@ -1,0 +1,33 @@
+# Archivos y carpetas que Unity puede regenerar
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Pp]ackages/com.unity.collab-proxy/
+UserSettings/
+
+# Archivos de IDE
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de Unity Cache Server
+[Cc]ache/
+
+# Otros archivos
+*.bak
