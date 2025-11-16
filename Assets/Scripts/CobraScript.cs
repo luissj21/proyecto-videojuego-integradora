@@ -13,12 +13,13 @@ public class CobraScript : MonoBehaviour
 
     private void Update()
     {
-
-        if (Rambo == null) return;
+        if (Rambo == null || !Rambo.activeInHierarchy) return;
 
         Vector3 direction = Rambo.transform.position - transform.position;
-        if (direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        else transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        if (direction.x >= 0.0f)
+            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        else
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
 
         float distance = Mathf.Abs(Rambo.transform.position.x - transform.position.x);
 
@@ -28,6 +29,7 @@ public class CobraScript : MonoBehaviour
             LastShoot = Time.time;
         }
     }
+
 
     private void Shoot()
     {
