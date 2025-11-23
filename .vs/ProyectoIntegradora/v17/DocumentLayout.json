@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\luiss\\ProyectoIntegradora\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|c:\\users\\luiss\\proyectointegradora\\assets\\scripts\\pausarjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausarjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\pasarnivelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pasarnivelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\pasarzonascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pasarzonascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|c:\\users\\luiss\\proyectointegradora\\assets\\scripts\\jugadormovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jugadormovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\menuinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\menuinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\jugadormovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jugadormovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\cobrascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,45 +38,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "PausarJuego.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PausarJuego.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PausarJuego.cs",
+              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PausarJuego.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PausarJuego.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:23:10.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MenuInicial.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\MenuInicial.cs",
               "RelativeDocumentMoniker": "Assets\\MenuInicial.cs",
               "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\MenuInicial.cs",
               "RelativeToolTip": "Assets\\MenuInicial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T20:57:42.465Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PasarZonaScript.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PasarZonaScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PasarZonaScript.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PasarZonaScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PasarZonaScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:07:25.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "PasarNivelScript.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PasarNivelScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PasarNivelScript.cs",
               "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PasarNivelScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\PasarNivelScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:39:25.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T01:39:25.846Z"
             },
             {
               "$type": "Document",
@@ -116,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "JugadorMovement.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\JugadorMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JugadorMovement.cs",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "Assets\\Scripts\\JugadorMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T15:09:02.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T15:09:02.218Z"
             }
           ]
         }
