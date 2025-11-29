@@ -10,7 +10,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private bool Grounded;
     private Animator Animator;
     private float LastShoot;
-    private int Health = 25;
+    public int Health = 25;
     public float FallLimitY = -10f; // Altura mínima antes de morir
 
     //  Nueva variable para punto de reaparición
