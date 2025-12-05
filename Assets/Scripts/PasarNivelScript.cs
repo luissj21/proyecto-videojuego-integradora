@@ -10,7 +10,7 @@ public class PasarNivelScript : MonoBehaviour
         int current = SceneManager.GetActiveScene().buildIndex;
 
         // Si estás en el último nivel (Nivel 3)
-        if (current == 3)   // <-- Ajusta al index correcto en tu Build Settings
+        if (current == 4)   // <-- Ajusta al index correcto en tu Build Settings
         {
             SceneManager.LoadScene("MenuInicial");
         }
