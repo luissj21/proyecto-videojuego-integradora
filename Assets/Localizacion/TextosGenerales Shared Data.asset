@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TextosGenerales Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: TextosGenerales
+  m_TableCollectionNameGuidString: d8bc5f1bf899c9947a4d06b306069bb9
+  m_Entries:
+  - m_Id: 1733496385536
+    m_Key: TextoBotonJugarMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885762203648
+    m_Key: TextoBotonSalirMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3078982971392
+    m_Key: TextoHistoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3243663929344
+    m_Key: TextoBotonSaltarIntro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4221100339200
+    m_Key: TextoBotonEscContinuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4494803841024
+    m_Key: TextoPausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4913206636544
+    m_Key: TextoBotonContinuarDeLaPausa
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1475162112222298112
+  references:
+    version: 2
+    RefIds:
+    - rid: 1475162112222298112
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1764986440156

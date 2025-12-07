@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TextosGenerales_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: d8bc5f1bf899c9947a4d06b306069bb9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1733496385536
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885762203648
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3078982971392
+    m_Localized: "El soldado Hunter es un operativo de \xE9lite, su nueva misi\xF3n
+      ha sido conseguir un material de energ\xEDa en una peque\xF1a isla en el mar
+      Indico, pero al llegar a la isla se encontr\xF3 con una sorpresa, la isla no
+      estaba deshabitada sino que ha sido tomada por el equipo cobra la cual busca
+      utilizar ese prototipo de energ\xEDa para poder crear nuevas y m\xE1s potentes
+      armas para poder conquistar el mundo, entonces la misi\xF3n del soldado es
+      encontrar el prototipo, derrotar a los enemigos y salir de la isla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3243663929344
+    m_Localized: Saltar Intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4221100339200
+    m_Localized: Presiona Esc para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4494803841024
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4913206636544
+    m_Localized: Reanudar
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -2,26 +2,28 @@
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    public GameObject BulletPrefab;
-    public float Speed;
-    public float JumpForce;
+    public GameObject BulletPrefab; // Bala del jugador
+    public float Speed;             // Velocidad horizontal
+    public float JumpForce;         // Fuerza del salto
+
     private Rigidbody2D Rigidbody2D;
     private float Horizontal;
     private bool Grounded;
     private Animator Animator;
     private float LastShoot;
-    public int Health = 25;
-    public float FallLimitY = -10f; // Altura mínima antes de morir
 
-    //  Nueva variable para punto de reaparición
-    private Vector3 RespawnPosition;
+    public int Health = 25;         // Vida del jugador
+
+    public float FallLimitY = -10f; // Si cae más abajo, muere
+
+    private Vector3 RespawnPosition; // Punto donde reaparece
 
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
 
-        // Guarda la posición inicial como punto de reaparición
+        // Guardar punto de inicio como respawn
         RespawnPosition = transform.position;
     }
 
@@ -29,32 +31,35 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
 
+        // Voltear sprite según dirección de movimiento
         if (Horizontal < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         else if (Horizontal > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         Animator.SetBool("running", Horizontal != 0.0f);
 
+        // Comprobar si está tocando el piso
         Debug.DrawRay(transform.position, Vector3.down * 0.1f, Color.red);
         Grounded = Physics2D.Raycast(transform.position, Vector3.down, 0.1f);
 
+        // Saltar
         if (Input.GetKeyDown(KeyCode.W) && Grounded)
         {
             Jump();
         }
 
+        // Disparar
         if (Input.GetKey(KeyCode.Space) && Time.time > LastShoot + 0.25f)
         {
             Shoot();
             LastShoot = Time.time;
         }
 
-        // Si cae por debajo del límite, "muere" automáticamente
+        // Si cae fuera del mapa, morir y respawnear
         if (transform.position.y < FallLimitY)
         {
             Health = 0;
             DieAndRespawn();
         }
-
     }
 
     private void Jump()
@@ -64,13 +69,18 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void Shoot()
     {
+        // Dirección según hacia dónde mira el jugador
         Vector3 direction = (transform.localScale.x == 1.0f) ? Vector2.right : Vector2.left;
+
+        // Crear bala
         GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.5f, Quaternion.identity);
+
         bullet.GetComponent<Bullet>().SetDirection(direction);
     }
 
     private void FixedUpdate()
     {
+        // Movimiento horizontal
         Rigidbody2D.linearVelocity = new Vector2(Horizontal, Rigidbody2D.linearVelocity.y);
     }
 
@@ -83,27 +93,23 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
     }
 
-    //  Nueva función para reaparecer al jugador
     private void DieAndRespawn()
     {
-        // Opcional: podrías reproducir una animación de muerte aquí
+        // Podrías animar muerte aquí
 
-        // Desactivar temporalmente el jugador
+        // Desactivar jugador
         gameObject.SetActive(false);
 
-        // Iniciar el respawn después de 2 segundos
+        // Reaparecer después de 2 segundos
         Invoke(nameof(Respawn), 2f);
     }
 
     private void Respawn()
     {
-        // Restaurar salud
-        Health = 25;
+        Health = 25; // Restaurar vida
 
-        // Mover al punto de reaparición
-        transform.position = RespawnPosition;
+        transform.position = RespawnPosition; // Volver al inicio
 
-        // Reactivar el jugador
-        gameObject.SetActive(true);
+        gameObject.SetActive(true); // Reactivar jugador
     }
 }

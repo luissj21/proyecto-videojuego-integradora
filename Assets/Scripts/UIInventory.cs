@@ -7,16 +7,18 @@ using UnityEngine.SceneManagement;
 public class UIInventory : MonoBehaviour
 {
     public static UIInventory Instance;
+    // Singleton para manejar la UI del inventario.
 
     [Header("Asignar en Inspector (escena 1)")]
-    public GameObject itemTMPPrefab;      // prefab con TextMeshProUGUI
-    public Transform contentParent;       // opcional: asignado en escena 1
+    public GameObject itemTMPPrefab;      // Prefab del texto (TextMeshPro) para mostrar los items.
+    public Transform contentParent;       // Contenedor donde se instancian los textos.
 
-    // internal
+    // Guarda referencias a cada entrada generada.
     private Dictionary<string, TextMeshProUGUI> itemEntries = new Dictionary<string, TextMeshProUGUI>();
 
     private void Awake()
     {
+        // Configurar Singleton, evitando duplicados entre escenas.
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -25,9 +27,10 @@ public class UIInventory : MonoBehaviour
 
         Instance = this;
 
+        // Que no destruya al cambiar de escena.
         DontDestroyOnLoad(transform.root.gameObject);
 
-        // Re-suscribir siempre el evento
+        // Suscribir evento de carga de escena.
         SceneManager.sceneLoaded -= OnSceneLoaded;
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -35,17 +38,20 @@ public class UIInventory : MonoBehaviour
 
     private void OnEnable()
     {
+        // Asegurar la suscripción del evento.
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
+        // Desuscribirse cuando se desactive.
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
 
     private void Start()
     {
+        // Si aún no tiene parent asignado, intentar encontrarlo.
         if (contentParent == null)
             TryFindContentInScene();
     }
@@ -55,23 +61,22 @@ public class UIInventory : MonoBehaviour
     {
         Debug.Log($"UIInventory: escena cargada: {scene.name} -> intentando reconectar Content...");
 
-        // --- OCULTAR INVENTARIO EN MENÚS ---
+        // En los menús no se muestra el inventario.
         if (scene.name == "MenuInicial" || scene.name == "MainMenu" || scene.name.Contains("Menu"))
         {
             gameObject.SetActive(false);
             return;
         }
 
-        // --- MOSTRAR INVENTARIO EN ESCENAS DE JUEGO ---
+        // En escenas de juego sí se muestra.
         gameObject.SetActive(true);
-
 
         TryFindContentInScene();
     }
 
     private void TryFindContentInScene()
     {
-        // 1) Busca por nombre exacto "Content"
+        // 1) Buscar objeto llamado exactamente "Content".
         GameObject found = GameObject.Find("Content");
         if (found != null)
         {
@@ -81,7 +86,7 @@ public class UIInventory : MonoBehaviour
             return;
         }
 
-        // 2) Busca dentro de todos los Canvas por un hijo que tenga VerticalLayoutGroup o ContentSizeFitter
+        // 2) Buscar dentro de los Canvas un layout adecuado.
         Canvas[] canvases = FindObjectsOfType<Canvas>();
         foreach (var c in canvases)
         {
@@ -95,13 +100,14 @@ public class UIInventory : MonoBehaviour
             }
         }
 
-        // 3) No encontrado: creamos un Canvas/Panel/Content mínimo para que el inventario no desaparezca
+        // 3) No encontrado → crear UI de emergencia.
         Debug.LogWarning("UIInventory: No se encontró 'Content' en la escena. Creando un panel temporal para el inventario.");
         CreateFallbackUI();
     }
 
     private Transform FindChildWithLayout(Transform root)
     {
+        // Busca recursivamente un child con layout.
         foreach (Transform child in root)
         {
             if (child.GetComponent<VerticalLayoutGroup>() != null || child.GetComponent<ContentSizeFitter>() != null)
@@ -115,26 +121,26 @@ public class UIInventory : MonoBehaviour
 
     private void CreateFallbackUI()
     {
-        // Crear Canvas raíz
+        // Crea Canvas de emergencia si la escena no tiene UI compatible.
         GameObject canvasGO = new GameObject("UIInventory_Canvas");
         Canvas canvas = canvasGO.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
         canvasGO.AddComponent<CanvasScaler>();
         canvasGO.AddComponent<GraphicRaycaster>();
 
-        // Crear Panel
+        // Crear panel contenedor.
         GameObject panel = new GameObject("InventoryPanel");
         panel.transform.SetParent(canvasGO.transform, false);
         RectTransform panelRT = panel.AddComponent<RectTransform>();
         Image img = panel.AddComponent<Image>();
-        img.color = new Color(0, 0, 0, 0.25f);
+        img.color = new Color(0, 0, 0, 0.25f); // Fondo semitransparente.
         panelRT.anchorMin = new Vector2(0.5f, 1f);
         panelRT.anchorMax = new Vector2(0.5f, 1f);
         panelRT.pivot = new Vector2(0.5f, 1f);
         panelRT.sizeDelta = new Vector2(300, 80);
         panelRT.anchoredPosition = new Vector2(0, -10);
 
-        // Crear Content (dentro del panel)
+        // Crear contenedor Content interno.
         GameObject content = new GameObject("Content");
         content.transform.SetParent(panel.transform, false);
         RectTransform contentRT = content.AddComponent<RectTransform>();
@@ -154,17 +160,18 @@ public class UIInventory : MonoBehaviour
 
     private void RefreshUIEntriesToNewParent()
     {
+        // Crear nuevamente toda la UI del inventario según el snapshot del InventoryManager.
         if (itemTMPPrefab == null)
         {
-            Debug.LogError("UIInventory: itemTMPPrefab NO está asignado en el Inspector. Asigna tu prefab de TextMeshPro.");
+            Debug.LogError("UIInventory: itemTMPPrefab NO está asignado en el Inspector.");
             return;
         }
 
-        // limpiar hijos antiguos en el nuevo parent
+        // Borrar viejos elementos.
         foreach (Transform child in contentParent)
             Destroy(child.gameObject);
 
-        // recrear todas las entradas guardadas en InventoryManager
+        // Recrear entradas según el inventario actual.
         if (InventoryManager.Instance != null)
         {
             var currentItems = InventoryManager.Instance.GetAllItemsSnapshot();
@@ -183,12 +190,14 @@ public class UIInventory : MonoBehaviour
 
     public void UpdateItem(string itemName, int count)
     {
+        // Actualiza un solo item, recreando su entrada en UI.
         if (itemTMPPrefab == null)
         {
-            Debug.LogError("UIInventory: itemTMPPrefab NO está asignado en el Inspector. Asigna tu prefab de TextMeshPro.");
+            Debug.LogError("UIInventory: itemTMPPrefab NO está asignado.");
             return;
         }
 
+        // Si el contentParent aún no existe, buscarlo.
         if (contentParent == null)
         {
             Debug.LogWarning("UIInventory: contentParent aún no encontrado. Intentando otra búsqueda rápida...");
@@ -200,7 +209,7 @@ public class UIInventory : MonoBehaviour
             }
         }
 
-        // Si ya existe una entrada para ese item, la borramos (reemplazamos)
+        // Si ya existe una entrada del item, eliminarla.
         foreach (Transform child in contentParent)
         {
             var tmp = child.GetComponent<TextMeshProUGUI>();
@@ -211,13 +220,14 @@ public class UIInventory : MonoBehaviour
             }
         }
 
+        // Crear nueva entrada actualizada.
         GameObject newItem = Instantiate(itemTMPPrefab, contentParent);
         TextMeshProUGUI textComp = newItem.GetComponent<TextMeshProUGUI>();
         if (textComp != null)
             textComp.text = $"{itemName} x{count.ToString("D2")}";
     }
 
-    // Limpia la UI (opcional)
+    // Limpia la UI del inventario (sin borrar datos del InventoryManager)
     public void ClearUI()
     {
         if (contentParent == null) return;
@@ -225,7 +235,7 @@ public class UIInventory : MonoBehaviour
             Destroy(child.gameObject);
     }
 
-    // --- Implementación de GetHierarchyPath (para logging) ---
+    // Función auxiliar para debug: muestra el path completo del objeto en la jerarquía.
     private string GetHierarchyPath(Transform t)
     {
         if (t == null) return "";
@@ -239,63 +249,3 @@ public class UIInventory : MonoBehaviour
         return path;
     }
 }
-
-
-//using UnityEngine;
-//using TMPro;
-//using UnityEngine.SceneManagement;
-
-//public class UIInventory : MonoBehaviour
-//{
-//    public static UIInventory Instance;
-
-//    public Transform contentParent;
-//    public GameObject itemTMPPrefab;
-
-//    private void Awake()
-//    {
-//        if (Instance == null)
-//        {
-//            Instance = this;
-//            DontDestroyOnLoad(gameObject);
-
-//            SceneManager.sceneLoaded += OnSceneLoaded; // Detecta cuando cambia de escena
-//        }
-//        else
-//        {
-//            Destroy(gameObject);
-//        }
-//    }
-
-//    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-//    {
-//        // Buscar el nuevo contentParent en cada escena
-//        GameObject newContent = GameObject.Find("Content");
-
-//        if (newContent != null)
-//        {
-//            contentParent = newContent.transform;
-//        }
-//        else
-//        {
-//            Debug.LogWarning("UIInventory: No se encontró el objeto 'Content' en esta escena.");
-//        }
-//    }
-
-//    public void UpdateItem(string itemName, int count)
-//    {
-//        if (contentParent == null)
-//        {
-//            Debug.LogError("UIInventory: NO hay contentParent asignado en la escena actual.");
-//            return;
-//        }
-
-//        // Limpiar el panel
-//        foreach (Transform child in contentParent)
-//            Destroy(child.gameObject);
-
-//        // Crear texto
-//        var newItem = Instantiate(itemTMPPrefab, contentParent);
-//        newItem.GetComponent<TextMeshProUGUI>().text = $"{itemName} x{count}";
-//    }
-//}

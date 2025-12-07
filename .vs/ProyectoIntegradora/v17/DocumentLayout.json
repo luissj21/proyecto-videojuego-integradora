@@ -3,52 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\luiss\\ProyectoIntegradora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\pasarnivelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pasarnivelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|c:\\users\\luiss\\proyectointegradora\\assets\\scripts\\historiascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historiascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\menuinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\menuinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\uiinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\pickupitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickupitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\barravida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\barravida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\cobrascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cobrascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\pausarjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausarjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\jugadormovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jugadormovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\cobrascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cobrascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|C:\\Users\\luiss\\ProyectoIntegradora\\assets\\scripts\\changelanguage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{273C8CE3-0BF7-6D56-3115-4239FCE0CA6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\changelanguage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,153 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HistoriaScroll.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\HistoriaScroll.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HistoriaScroll.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\HistoriaScroll.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HistoriaScroll.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ChangeLanguage.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\ChangeLanguage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ChangeLanguage.cs",
+              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\ChangeLanguage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ChangeLanguage.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T03:35:08.666Z",
+              "WhenOpened": "2025-12-06T04:21:27.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UIInventory.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\UIInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIInventory.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\UIInventory.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIInventory.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAxwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T01:20:08.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InventoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\InventoryManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryManager.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\InventoryManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventoryManager.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAUwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T21:48:19.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PickupItem.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PickupItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PickupItem.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PickupItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PickupItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:51:35.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BarraVida.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\BarraVida.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BarraVida.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\BarraVida.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BarraVida.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T19:12:37.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PausarJuego.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PausarJuego.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PausarJuego.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PausarJuego.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PausarJuego.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T19:23:10.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuInicial.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\MenuInicial.cs",
-              "RelativeDocumentMoniker": "Assets\\MenuInicial.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\MenuInicial.cs",
-              "RelativeToolTip": "Assets\\MenuInicial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:57:42.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PasarNivelScript.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PasarNivelScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PasarNivelScript.cs",
-              "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\PasarNivelScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PasarNivelScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:39:25.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "CobraScript.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\CobraScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CobraScript.cs",
               "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\CobraScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\CobraScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T23:20:57.067Z"
+              "WhenOpened": "2025-10-06T23:20:57.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "CameraScript.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\CameraScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraScript.cs",
               "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\CameraScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T21:26:08.942Z"
+              "WhenOpened": "2025-10-04T21:26:08.942Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "BulletScript.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\BulletScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BulletScript.cs",
               "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\BulletScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\BulletScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T23:02:47.873Z"
+              "WhenOpened": "2025-10-02T23:02:47.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "JugadorMovement.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\JugadorMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JugadorMovement.cs",
               "ToolTip": "C:\\Users\\luiss\\ProyectoIntegradora\\Assets\\Scripts\\JugadorMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\JugadorMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T15:09:02.218Z"
+              "WhenOpened": "2025-09-30T15:09:02.218Z",
+              "EditorCaption": ""
             }
           ]
         }

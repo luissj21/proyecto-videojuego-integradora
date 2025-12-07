@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject Rambo; // Jugador a seguir
 
-    public GameObject Rambo;
-
-    // Update is called once per frame
     void Update()
     {
         if (Rambo != null)
         {
+            // Mantener la altura y posición Z, solo seguir en eje X
             Vector3 position = transform.position;
             position.x = Rambo.transform.position.x;
             transform.position = position;

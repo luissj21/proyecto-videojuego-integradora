@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TextosGenerales_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: d8bc5f1bf899c9947a4d06b306069bb9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1733496385536
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885762203648
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3078982971392
+    m_Localized: "Soldier Hunter is an elite operative. His new mission has been
+      to obtain an energy material on a small island in the Indian Ocean, but when
+      he arrived on the island, he found a surprise: the island was not uninhabited.
+      It had been taken over by the Cobra team, who intend to use that energy prototype
+      to create new and more powerful weapons in order to conquer the world. Therefore,
+      the soldier\u2019s mission is to find the prototype, defeat the enemies, and
+      escape the island."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3243663929344
+    m_Localized: Skip Intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4221100339200
+    m_Localized: Press Esc to continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4494803841024
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4913206636544
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -4,15 +4,15 @@ using UnityEngine.UI;
 
 public class HistoriaScroll : MonoBehaviour
 {
-    public RectTransform texto;
-    public float velocidad = 50f;
-    public float limiteSuperior = 1000f;
+    public RectTransform texto;   // RectTransform del texto que se desplazará.
+    public float velocidad = 50f; // Velocidad de movimiento del texto hacia arriba.
+    public float limiteSuperior = 1000f; // Posición a la que cambia de escena.
 
-    public Button botonSaltar; // ← nuevo
+    public Button botonSaltar; // Botón para saltar la intro.
 
     void Start()
     {
-        // Opcional: asegurar que el botón esté conectado
+        // Si el botón existe, asignar la acción de salto.
         if (botonSaltar != null)
         {
             botonSaltar.onClick.AddListener(SaltarIntro);
@@ -21,50 +21,26 @@ public class HistoriaScroll : MonoBehaviour
 
     void Update()
     {
-        // Movimiento automático del texto
+        // Mover el texto hacia arriba constantemente.
         texto.anchoredPosition += Vector2.up * velocidad * Time.deltaTime;
 
-        // Cuando llegue al límite, pasa a la siguiente escena
+        // Al llegar al límite configurado, pasar a la siguiente escena.
         if (texto.anchoredPosition.y >= limiteSuperior)
         {
             CargarSiguienteEscena();
         }
     }
 
-    // 🔵 Función para cargar la siguiente escena
+    // Carga la siguiente escena en el Build Settings.
     void CargarSiguienteEscena()
     {
         int indexActual = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(indexActual + 1);
     }
 
-    // 🔵 Función que se llama cuando oprimes el botón
+    // Ejecutado al presionar el botón de "Saltar".
     public void SaltarIntro()
     {
         CargarSiguienteEscena();
     }
 }
-
-
-
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
-
-//public class HistoriaScroll : MonoBehaviour
-//{
-//    public RectTransform texto;
-//    public float velocidad = 50f;
-//    public float limiteSuperior = 1000f;
-
-//    void Update()
-//    {
-//        texto.anchoredPosition += Vector2.up * velocidad * Time.deltaTime;
-
-//        if (texto.anchoredPosition.y >= limiteSuperior)
-//        {
-//            // Cargar la siguiente escena según el índice del build
-//            int indexActual = SceneManager.GetActiveScene().buildIndex;
-//            SceneManager.LoadScene(indexActual + 1);
-//        }
-//    }
-//}

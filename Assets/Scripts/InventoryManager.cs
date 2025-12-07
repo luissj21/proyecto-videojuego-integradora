@@ -4,20 +4,22 @@ using System.Collections.Generic;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
+    // Singleton para acceder al inventario desde cualquier script.
 
     // Diccionario que almacena itemName -> cantidad
     private Dictionary<string, int> items = new Dictionary<string, int>();
 
     private void Awake()
     {
+        // Configura el Singleton y evita duplicados entre escenas.
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); // No destruir al cambiar de escena.
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Si ya existe un Instance, eliminar este.
         }
     }
 
@@ -26,11 +28,13 @@ public class InventoryManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(itemName)) return;
 
+        // Si el item no existe aún, iniciarlo en 0.
         if (!items.ContainsKey(itemName))
             items[itemName] = 0;
 
-        items[itemName]++;
+        items[itemName]++; // Incrementar cantidad.
 
+        // Actualizar UI si existe.
         if (UIInventory.Instance != null)
             UIInventory.Instance.UpdateItem(itemName, items[itemName]);
     }
@@ -39,26 +43,26 @@ public class InventoryManager : MonoBehaviour
     public int GetItemCount(string itemName)
     {
         if (items.TryGetValue(itemName, out int count)) return count;
-        return 0;
+        return 0; // Si no existe, devuelve 0.
     }
 
-    // Devuelve una copia del diccionario actual (snapshot)
+    // Devuelve una copia del inventario actual.
     public Dictionary<string, int> GetAllItemsSnapshot()
     {
         return new Dictionary<string, int>(items);
     }
 
-    // (Opcional) método para resetear inventario
+    // Elimina todos los items (opcional).
     public void ClearAll()
     {
         items.Clear();
         if (UIInventory.Instance != null)
-            UIInventory.Instance.ClearUI();
+            UIInventory.Instance.ClearUI(); // Limpia la UI.
     }
 
     public void ResetInventoryForNewGame()
     {
-        items.Clear();
+        items.Clear(); // Reiniciar inventario interno.
 
         // limpiar la UI si existe
         if (UIInventory.Instance != null)
@@ -66,34 +70,4 @@ public class InventoryManager : MonoBehaviour
 
         Debug.Log("InventoryManager: Inventario reiniciado para nueva partida.");
     }
-
 }
-
-
-//using UnityEngine;
-
-//public class InventoryManager : MonoBehaviour
-//{
-//    public static InventoryManager Instance;
-
-//    public int itemCount = 0;
-
-//    private void Awake()
-//    {
-//        if (Instance == null)
-//        {
-//            Instance = this;
-//            DontDestroyOnLoad(gameObject); // Se mantiene entre escenas
-//        }
-//        else
-//        {
-//            Destroy(gameObject);
-//        }
-//    }
-
-//    public void AddItem(string itemName)
-//    {
-//        itemCount++;
-//        UIInventory.Instance.UpdateItem(itemName, itemCount);
-//    }
-//}
